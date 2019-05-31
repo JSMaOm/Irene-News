@@ -1,0 +1,10 @@
+.btn {
+  border: none;
+  border-radius: 0;
+  &-primary {
+    background-color: $primary;
+  }
+  &-success {
+    background-color: $success;
+  }
+}

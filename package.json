@@ -1,0 +1,19 @@
+{
+  "name": "news",
+  "version": "1.0.0",
+  "description": "News Website",
+  "main": "index.js",
+  "scripts": {
+    "start1": "node-sass css/style.scss css/style.min.css",
+    "start": "node-sass --output-style compressed css/style.scss css/style.min.css",
+    "autoprefixer": "postcss -u autoprefixer -r css/*"
+  },
+  "keywords": [
+    "News"
+  ],
+  "author": "Marah",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}

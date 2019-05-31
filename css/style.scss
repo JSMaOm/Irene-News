@@ -1,0 +1,153 @@
+@import 'normalize';
+@import 'components/variables';
+@import 'bootstrap';
+@import 'components/btn';
+
+body {
+  font-size: 14px;
+  color: $secondary;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background: none;
+}
+
+.carousel-control-prev-icon {
+  background-image: url('../img/chevron-small-left.svg');
+}
+
+.carousel-control-next-icon {
+  background-image: url('../img/chevron-small-right.svg');
+}
+
+.padlayer {
+  height: 90px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1000;
+}
+
+.navbar {
+  z-index: 9999;
+  background: rgba(#fff, 0.4);
+  height: 90px;
+  &-brand {
+    width: 60px;
+  }
+
+  .nav-link {
+    color: $dark;
+  }
+}
+
+.hero {
+  &_imgs {
+    display: none;
+  }
+
+  .carousel {
+    &-item {
+      height: calc(100vh - 90px);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    &-caption {
+      background-color: rgba(0, 0, 0, 0.5);
+      position: absolute;
+      width: 45%;
+      top: 20vh;
+      right: 10vw;
+      bottom: auto;
+      left: auto;
+      padding: 1.5em 2em;
+
+      p {
+        font-size: 18px;
+        white-space: none;
+        text-overflow: ellipsis;
+      }
+    }
+
+    &-control-prev,
+    &-control-next {
+      background-color: rgba(0, 0, 0, 0.5);
+      height: 50px;
+      width: 50px;
+      top: calc(50% - 25px);
+    }
+
+    &-control-prev {
+      left: 2%;
+    }
+
+    &-control-next {
+      right: 2%;
+    }
+  }
+}
+.main {
+  min-height: 100vh;
+  width: 65%;
+}
+
+.newsflash {
+  width: 100%;
+  height: 50px;
+  font-size: 18px;
+  &_news {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  .carousel,
+  .carousel-inner,
+  .carousel-item {
+    height: 100%;
+  }
+
+  .carousel {
+    height: 100%;
+    padding: 10px 20px 10px 100px;
+  }
+
+  .carousel-control-next,
+  .carousel-control-prev {
+    top: 0;
+    width: 30px;
+  }
+
+  .carousel-control-next {
+    left: 5%;
+  }
+
+  .carousel-control-prev {
+    left: 0%;
+  }
+}
+
+@import 'components/news';
+
+.aside {
+  min-height: 100vh;
+  width: 35%;
+}
+
+.footer {
+  padding: 5em 0;
+  background: $dark;
+
+  &__logo-box {
+    width: 70px;
+    width: 70px;
+  }
+
+  &__logo {
+  }
+}

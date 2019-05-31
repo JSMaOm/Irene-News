@@ -1,0 +1,36 @@
+.news {
+  padding: 50px 0;
+  &__type {
+    background: red;
+  }
+
+  &__main {
+    width: 100%;
+
+    .card {
+      height: 100%;
+
+      &-body {
+        padding: 10px 0 0;
+      }
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+      top: auto;
+      left: 0;
+      bottom: -5%;
+      right: auto;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      width: 30px;
+      height: 30px;
+    }
+
+    .carousel-control-next {
+      left: 10%;
+    }
+  }
+}
