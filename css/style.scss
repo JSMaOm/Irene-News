@@ -8,17 +8,21 @@ body {
   color: $secondary;
 }
 
+hr {
+  background-color: $light;
+}
+
 .carousel-control-prev,
 .carousel-control-next {
-  background: none;
+  background: rgba(0, 0, 0, 0.8);
 }
 
 .carousel-control-prev-icon {
-  background-image: url('../img/chevron-small-left.svg');
+  background-image: url('../img/icons/chevron-small-left.svg');
 }
 
 .carousel-control-next-icon {
-  background-image: url('../img/chevron-small-right.svg');
+  background-image: url('../img/icons/chevron-small-right.svg');
 }
 
 .padlayer {
@@ -34,6 +38,20 @@ body {
   z-index: 9999;
   background: rgba(#fff, 0.4);
   height: 90px;
+  transition: all 0.3s ease-in-out;
+
+  &_fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 50px;
+    background-color: #fff;
+    box-shadow: 5px 5px 10px -5px rgba(0, 0, 0, 0.3);
+    .navbar-brand {
+      width: 30px;
+    }
+  }
+
   &-brand {
     width: 60px;
   }
@@ -97,7 +115,6 @@ body {
 
 .newsflash {
   width: 100%;
-  height: 50px;
   font-size: 18px;
   &_news {
     text-overflow: ellipsis;
@@ -119,8 +136,10 @@ body {
 
   .carousel-control-next,
   .carousel-control-prev {
-    top: 0;
+    top: calc(50% - 15px);
+    bottom: auto;
     width: 30px;
+    height: 30px;
   }
 
   .carousel-control-next {
@@ -137,17 +156,53 @@ body {
 .aside {
   min-height: 100vh;
   width: 35%;
+  padding-top: 97px;
+  margin-bottom: 2em;
+
+  &__cast {
+    .day,
+    .month,
+    .year {
+      display: block;
+      color: #fff;
+      min-height: 100%;
+      background: #bb675a;
+      font-weight: bolder;
+      font-size: 32px;
+      text-align: center;
+      padding: 0.6em 0.2em;
+    }
+  }
+
+  &__subscribe {
+    background-color: $light;
+    padding: 1em;
+  }
 }
 
 .footer {
   padding: 5em 0;
   background: $dark;
-
-  &__logo-box {
-    width: 70px;
-    width: 70px;
-  }
+  color: $light;
 
   &__logo {
+    width: 100px;
+    width: 100px;
+  }
+
+  .nav-link {
+    color: $light;
+  }
+
+  .btn {
+    color: $dark;
+  }
+
+  &_social {
+    width: 100%;
+
+    .nav-link {
+      padding: 0.5em;
+    }
   }
 }

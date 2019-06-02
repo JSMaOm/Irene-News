@@ -1,7 +1,13 @@
 .news {
   padding: 50px 0;
+  margin-bottom: 2em;
   &__type {
-    background: red;
+    background-color: $info;
+    margin-bottom: 1em;
+    &-title {
+      margin: 0;
+      padding: 0.7em;
+    }
   }
 
   &__main {
@@ -9,9 +15,15 @@
 
     .card {
       height: 100%;
+      border: none;
+
+      &-title {
+        margin-bottom: 0;
+      }
 
       &-body {
         padding: 10px 0 0;
+        margin-bottom: 1em;
       }
     }
 
@@ -19,12 +31,8 @@
     .carousel-control-prev {
       top: auto;
       left: 0;
-      bottom: -5%;
+      bottom: -10%;
       right: auto;
-    }
-
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
       width: 30px;
       height: 30px;
     }
@@ -32,5 +40,33 @@
     .carousel-control-next {
       left: 10%;
     }
+  }
+
+  &__info {
+    color: $dark;
+    font-size: 12px;
+    margin-bottom: 1em;
+  }
+
+  &__date,
+  &__num-comments,
+  &__num-views {
+    margin-right: 20px;
+    background-repeat: no-repeat;
+    background-size: 10px;
+    background-position: 0px 3.5px;
+    padding-left: 15px;
+  }
+
+  &__date {
+    background-image: url('../../img/icons/clock.svg');
+  }
+
+  &__num-comments {
+    background-image: url('../../img/icons/bubbles4.svg');
+  }
+
+  &__num-views {
+    background-image: url('../../img/icons/eye.svg');
   }
 }
