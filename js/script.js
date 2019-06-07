@@ -46,7 +46,7 @@ const padLayer = document.querySelector('.padlayer');
 function date() {
   const d = new Date();
   const month = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-  setDate('day', d.getMonth());
+  setDate('day', d.getDate());
   setDate('month', month[d.getMonth()]);
   setDate('year', d.getFullYear());
 }
