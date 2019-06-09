@@ -1,5 +1,11 @@
+#world {
+  .news {
+    padding: 61px 0 50px;
+  }
+}
+
 .news {
-  padding: 61px 0 50px;
+  padding: 0px 0 50px;
   margin-bottom: 2em;
   &__type {
     background-color: $info;
