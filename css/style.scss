@@ -161,6 +161,7 @@ hr {
 }
 
 .wrap-flex {
+  flex-wrap: wrap;
   @media screen and (max-width: 767px) {
     & {
       flex-direction: column;
@@ -208,7 +209,18 @@ hr {
   }
 
   .carousel-control-next {
-    left: 5%;
+    left: 4%;
+    @media screen and (max-width: 991px) {
+      & {
+        left: 7%;
+      }
+    }
+
+    @media screen and (max-width: 566px) {
+      & {
+        left: 10%;
+      }
+    }
   }
 
   .carousel-control-prev {
